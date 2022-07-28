@@ -6,21 +6,21 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active" data-bs-interval="10000">
-      <img src="asset/img/news1.jpg" class="d-block w-100" alt="..." width="100%"  height="400px">
+      <img src="asset/img/news1.jpg" class="d-block w-100" alt="..." width="100%"  height="300px">
       <div class="carousel-caption d-none d-md-block">
         <h5>Berita terkini</h5>
         <p>Terkini</p>
       </div>
     </div>
     <div class="carousel-item" data-bs-interval="2000">
-      <img src="asset/img/news2.jpg" class="d-block w-100" alt="..." width="100%" height="400px">
+      <img src="asset/img/news2.jpg" class="d-block w-100" alt="..." width="100%" height="300px">
       <div class="carousel-caption d-none d-md-block">
         <h5>Berita tebaru</h5>
         <p>Terbaru</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="asset/img/news3.jpg" class="d-block w-100" alt="..." width="100%"  height="400px">
+      <img src="asset/img/news3.jpg" class="d-block w-100" alt="..." width="100%"  height="300px">
       <div class="carousel-caption d-none d-md-block">
         <h5>Berita Terhangat</h5>
         <p>Terhangat</p>

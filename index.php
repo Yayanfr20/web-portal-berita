@@ -1,3 +1,11 @@
+<?php
+require 'admin/sistem/query.php';
+
+$allnews = query("SELECT * FROM postingan");
+
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,6 +32,11 @@ include 'asset/include/news.php';
 ?>
 </div>
 <!-- end news -->
+<br><br><br>
+<!-- terkini -->
+<h1 class="text-center mt-5">Berita terkini</h1>
+<?php include 'asset/include/terkini.php'; ?>
+<!-- end terkini -->
 
 
 <script src="asset/bootstrap/js/bootstrap.bundle.min.js"></script>
