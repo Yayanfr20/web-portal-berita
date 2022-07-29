@@ -6,22 +6,22 @@ if( !isset($_SESSION["login"]) ) {
 	exit;
 }
 
-require 'sistem/delkategori.php';
+require 'sistem/delpost.php';
 
 $id = $_GET["id"];
 
 if( hapus($id) > 0 ) {
 	echo "
 		<script>
-		alert('Kategori berhasil dihapus');
-		document.location.href = 'daftarkategori.php';
+		alert('postingan berhasil dihapus');
+		document.location.href = 'daftarposting.php';
 		</script>
 	";
 } else {
 	echo "
 		<script>
-		alert('Kategori gagal dihapus');
-			document.location.href = 'daftarkategori.php';
+		alert('postingan gagal dihapus');
+			document.location.href = 'daftarposting.php';
 		</script>
 	";
 }
@@ -30,4 +30,3 @@ if( hapus($id) > 0 ) {
 
 
 ?>
-

@@ -1,6 +1,6 @@
 <nav class="navbar navbar-dark navbar-expand-lg bg-secondary fixed-top">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"><span class="text-primary">Cihuy</span> <span class="text-danger">news</span> | Admin panel</a>
+    <a class="navbar-brand" href="index.php"><span class="text-primary">Cihuy</span> <span class="text-danger">news</span> | Admin panel</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -19,7 +19,7 @@
             <li><a class="dropdown-item" href="buatkategori.php">Buat kategori</a></li>
             <li><a class="dropdown-item" href="daftarkategori.php">Daftar kategori</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Logout</a></li>
+            <li><a class="dropdown-item" href="logout.php">Logout</a></li>
           </ul>
         </li>
         

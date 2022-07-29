@@ -1,7 +1,12 @@
 <?php
 require 'admin/sistem/query.php';
+$id = count(query("SELECT * FROM postingan"));
+$mulai = $id - 1;
+$allnews = query("SELECT * FROM postingan LIMIT $mulai, 1");
 
-$allnews = query("SELECT * FROM postingan");
+$allberita = query("SELECT * FROM postingan LIMIT 0, $mulai");
+
+$allkategori = query("SELECT * FROM kategori");
 
 
 ?>
@@ -22,24 +27,17 @@ include 'asset/include/header.php';
 ?>
 <!-- end header -->
 <br>
-<br>
-
-<!-- news -->
-<div class="container" style="width:80%;height:300px;margin-left:10%;">
-
-<?php
-include 'asset/include/news.php';
-?>
-</div>
-<!-- end news -->
-<br><br><br>
 <!-- terkini -->
 <h1 class="text-center mt-5">Berita terkini</h1>
 <?php include 'asset/include/terkini.php'; ?>
 <!-- end terkini -->
 
+<!-- berita lainnya -->
+<br>
+<h2 class="text-center">Berita lainnya</h2>
+<?php include 'asset/include/berita.php'; ?>
+<!-- end berita lainnya -->
 
 <script src="asset/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="asset/sweetalert2/dist/sweetalert2.all.min.js"></script>
 </body>
 </html>

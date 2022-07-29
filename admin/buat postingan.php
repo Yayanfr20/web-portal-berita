@@ -1,7 +1,32 @@
 <?php
+session_start();
+
+if( !isset($_SESSION["login"]) ) {
+	header("Location: login.php");
+	exit;
+}
+
 require 'sistem/query.php';
+require 'sistem/posting.php';
 $allkategori = query("SELECT * FROM kategori");
 
+if( isset($_POST['posting']) ) {
+    if( posting($_POST) > 0 ) {
+		echo "
+			<script>
+				alert('berhasil DIPOSTING!');
+				document.location.href = 'daftarposting.php';
+			</script>
+		";
+	} else {
+		echo "
+			<script>
+				alert('gagal DIPOSTING!');
+				document.location.href = 'daftarposting.php';
+			</script>
+		";
+	}
+}
 
 ?>
 <!DOCTYPE html>

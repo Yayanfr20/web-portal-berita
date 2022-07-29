@@ -1,4 +1,11 @@
 <?php
+session_start();
+
+if( !isset($_SESSION["login"]) ) {
+	header("Location: login.php");
+	exit;
+}
+
 require 'sistem/config.php';
 require 'sistem/query.php';
 
@@ -30,6 +37,5 @@ $jumlahpostingan = count(query("SELECT * FROM postingan"));
     <?php include 'include/dashboard.php' ?>
     <!-- end news -->
 <script src="../asset/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="../asset/sweetalert2/dist/sweetalert2.all.min.js"></script>
 </body>
 </html>
